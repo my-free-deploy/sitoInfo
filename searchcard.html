@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/searchcard.js" defer></script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" href="image/logo.jpg">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="container-fluid">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <img src="image/logo.png" alt="image/logo.png" width="100" class="logo-image">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="searchcard.html">RICERCA CARTA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tipoCarta.html">TIPO CARTA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="displayCard.html">CARTA RANDOM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search..." aria-label="Search"
+                        aria-describedby="searchButton">
+                    <button class="btn btn-outline-secondary" type="button" id="searchButton">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Add selectors for race and type -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <label for="raceSelector" class="form-label">Select Race:</label>
+                <select class="form-select" id="raceSelector">
+                    <option value="">none</option>
+                    <optgroup label="Monster">
+                        <option value="Aqua">Aqua</option>
+                        <option value="Beast">Beast</option>
+                        <option value="Beast-Warrior">Beast-Warrior</option>
+                        <option value="Creator-God">Creator-God</option>
+                        <option value="Cyberse">Cyberse</option>
+                        <option value="Dinosaur">Dinosaur</option>
+                        <option value="Divine-Beast">Divine-Beast</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Fairy">Fairy</option>
+                        <option value="Fiend">Fiend</option>
+                        <option value="Fish">Fish</option>
+                        <option value="Insect">Insect</option>
+                        <option value="Machine">Machine</option>
+                        <option value="Plant">Plant</option>
+                        <option value="Psychic">Psychic</option>
+                        <option value="Pyro">Pyro</option>
+                        <option value="Reptile">Reptile</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Sea Serpent">Sea Serpent</option>
+                        <option value="Spellcaster">Spellcaster</option>
+                        <option value="Thunder">Thunder</option>
+                        <option value="Warrior">Warrior</option>
+                        <option value="Winged Beast">Winged Beast</option>
+                        <option value="Wyrm">Wyrm</option>
+                        <option value="Zombie">Zombie</option>
+                    </optgroup>
+                    <optgroup label="Spell">
+                        <option value="Normal">Normal</option>
+                        <option value="Field">Field</option>
+                        <option value="Equip">Equip</option>
+                        <option value="Continuous">Continuous</option>
+                        <option value="Quick-Play">Quick-Play</option>
+                        <option value="Ritual">Ritual</option>
+                    </optgroup>
+                    <optgroup label="Trap">
+                        <option value="Normal">Normal</option>
+                        <option value="Continuous">Continuous</option>
+                        <option value="Counter">Counter</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="col-md-12">
+            <label for="typeSelector" class="form-label">Select Type:</label>
+            <select class="form-select" id="typeSelector">
+                <option value="">none</option>
+                <optgroup label="Main Deck Types">
+                    <option value="Effect Monster">Effect Monster</option>
+                    <option value="Flip Effect Monster">Flip Effect Monster</option>
+                    <option value="Flip Tuner Effect Monster">Flip Tuner Effect Monster</option>
+                    <option value="Gemini Monster">Gemini Monster</option>
+                    <option value="Normal Monster">Normal Monster</option>
+                    <option value="Normal Tuner Monster">Normal Tuner Monster</option>
+                    <option value="Pendulum Effect Monster">Pendulum Effect Monster</option>
+                    <option value="Pendulum Effect Ritual Monster">Pendulum Effect Ritual Monster</option>
+                    <option value="Pendulum Flip Effect Monster">Pendulum Flip Effect Monster</option>
+                    <option value="Pendulum Normal Monster">Pendulum Normal Monster</option>
+                    <option value="Pendulum Tuner Effect Monster">Pendulum Tuner Effect Monster</option>
+                    <option value="Ritual Effect Monster">Ritual Effect Monster</option>
+                    <option value="Ritual Monster">Ritual Monster</option>
+                    <option value="Spell Card">Spell Card</option>
+                    <option value="Spirit Monster">Spirit Monster</option>
+                    <option value="Toon Monster">Toon Monster</option>
+                    <option value="Trap Card">Trap Card</option>
+                    <option value="Tuner Monster">Tuner Monster</option>
+                    <option value="Union Effect Monster">Union Effect Monster</option>
+                </optgroup>
+                <optgroup label="Extra Deck Types">
+                    <option value="Fusion Monster">Fusion Monster</option>
+                    <option value="Link Monster">Link Monster</option>
+                    <option value="Pendulum Effect Fusion Monster">Pendulum Effect Fusion Monster</option>
+                    <option value="Synchro Monster">Synchro Monster</option>
+                    <option value="Synchro Pendulum Effect Monster">Synchro Pendulum Effect Monster</option>
+                    <option value="Synchro Tuner Monster">Synchro Tuner Monster</option>
+                    <option value="XYZ Monster">XYZ Monster</option>
+                    <option value="XYZ Pendulum Effect Monster">XYZ Pendulum Effect Monster</option>
+                </optgroup>
+                <optgroup label="Other Types">
+                    <option value="Skill Card">Skill Card</option>
+                    <option value="Token">Token</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+
+    <div id="ViewDetails" class="ViewDetails"></div>
+
+    <hr class="divider">
+
+    <div id="PageButtonsContainer"></div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <p class="mb-0">Creato da Caglio Tommaso</p>
+            <p class="mb-0">Progetto realizzato grazie alle API di <a href="https://ygoprodeck.com/"
+                    target="_blank">ygoprodeck.com</a></p>
+        </div>
+    </footer>
+
+    <script src="searchcard.js" defer></script>
+</body>
+
+
+
+</html>
